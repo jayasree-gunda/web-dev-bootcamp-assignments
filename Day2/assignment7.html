@@ -1,0 +1,23 @@
+<!-- By clicking on the button- some portion of para should update -->
+
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Paragraph</title>
+		<script>
+			function updatePara()
+			{
+				document.getElementById("abcd").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare massa eget egestas purus. Amet consectetur adipiscing elit ut aliquam purus sit amet. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh.";
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="color:purple;text-align:center";>Paragragh</h1>
+		<p>
+			<span id="abcd" class= "letter">There is a hidden message for you. Click to see it.</span>
+		</p>
+		<p id="abcd"></p>
+		<button type="button" onclick="updatePara()">
+		Click me!</button>
+	</body>
+</html>
