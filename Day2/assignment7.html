@@ -1,23 +1,27 @@
-<!-- By clicking on the button- some portion of para should update -->
+<!-- Updating some portion of paragraph -->
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Paragraph</title>
-		<script>
-			function updatePara()
-			{
-				document.getElementById("abcd").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare massa eget egestas purus. Amet consectetur adipiscing elit ut aliquam purus sit amet. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh.";
+		<title>Span Tag </title>
+		<style>
+			.letter {
+					background-color:skyblue;
 			}
-		</script>
+		</style>
 	</head>
 	<body>
-		<h1 style="color:purple;text-align:center";>Paragragh</h1>
+		<h2 style="color:red;">Welcome to bootcamp</h2>
 		<p>
-			<span id="abcd" class= "letter">There is a hidden message for you. Click to see it.</span>
+			<span id="t1" class ="letter">@nd Year</span>
+				students are doing
+			<span id="t2" class="letter">good</span>
 		</p>
-		<p id="abcd"></p>
-		<button type="button" onclick="updatePara()">
-		Click me!</button>
+		<button type="button" onclick="changeText()">change Text</button>
+		<script>
+			function changeText() {
+					document.getElementById("t1").innerHTML="2nd Year,IT";
+			}
+		</script>
 	</body>
 </html>
