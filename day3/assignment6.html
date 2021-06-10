@@ -1,0 +1,51 @@
+<!-- Assignment6 : Create an input that reads the name,aadhaar number,address, and displays it in the table format. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Details Page</title>
+	<head>
+	<body>
+		<form>
+			<!-- Name -->
+			<label for="Name">Name: </label>
+			<input type="text" id="Name" name="Name" placeholder="Enter Your Name" />
+			<br/><br/>
+			
+			<!-- Aadhaar Number -->
+			<label for="Anum">Aadhaar Number: </label>
+			<input type="number" id="Anum" name="Aadhaar Number" placeholder="Enter Aadhaar Number" />
+			<br/><br/>
+			
+			<!-- address -->
+			<label for="addr">Address: </label>
+			<input type="text" id="addr" name="Address" placeholder="Enter Your Address"/>
+			<br/><br/>
+			
+		</form>
+		<!-- Submit Button -->
+		<button onclick="readData()">Submit</button>
+		<script>
+			function readData() {
+					var Name=document.getElementById('Name').value;
+					var Anum=document.getElementById('Anum').value;
+					var addr=document.getElementById('addr').value;
+					document.getElementById("abc").innerHTML=Name;
+					document.getElementById("ab").innerHTML=Anum;
+					document.getElementById("a").innerHTML=addr;
+			}
+		</script>
+		<table border="2">
+			<tr>
+				<th>Name</th>
+				<th>Aadhaar Number</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td id="abc">Yet to be Released</td>
+				<td id="ab">Yet to be Released</td>
+				<td id="a">Yet to be Released</td>
+			</tr>
+		</table>
+	</body>
+</html>

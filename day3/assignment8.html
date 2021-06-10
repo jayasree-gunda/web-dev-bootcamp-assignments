@@ -1,0 +1,31 @@
+<!-- Assignment8 : Create an input that reads from the data list through the select tag and displays the data in the paragrapgh tag of HTML -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Select Tag</title>
+	</head>
+	<body>
+		<form>
+			<label>Select your favorite cricketer</label>
+			<select id="cricketer">
+				<option> MS Dhoni</option>
+				<option> AB Devilliers</option>
+				<option> Rohith Sharma</option>
+				<option> Virat Kohli</option>
+				<option> Warner</option>
+				<option> Kane Williamson</option>
+			</select>
+		</form>
+		<button onclick="submit()">Submit</button>
+		<p id="result"></p>
+		<p>Is your favorite cricketer</p>
+		<script>
+			function submit()
+			{
+				var c=document.getElementById('cricketer').value;
+				document.getElementById('result').innerHTML=c;
+			}
+		</script>
+	</body>
+</html>

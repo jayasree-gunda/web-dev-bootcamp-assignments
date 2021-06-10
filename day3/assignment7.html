@@ -1,0 +1,50 @@
+<!-- Assignment7 : Create an input that reads from radio,checkbox which displays the selected data in separate paragraphs -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Radio button</title>
+	</head>
+	<body>
+		<form>
+			<p>Select your favourite sports</p>
+			<input type="radio" id="cricket" value="cricket" name="sports"/>Cricket
+			<input type="radio" id="Hockey" value="Hockey" name="sports"/>Hockey<br/>
+			<label>Pick your favourite colors</label><br/>
+			<input type="checkbox" name="pink" id="pink"/>Pink<br/>
+			<input type="checkbox" name="green" id="green"/>Green<br/>
+		</form>
+		
+		<button onclick="submit()">submit</button>
+		<p id="sports"></p>is your favourite Sport<p>Your color is</p>
+		<p id="result"></p>
+		
+		<script>
+			function submit()
+			{
+				if(document.getElementById('cricket').checked==true) {
+					document.getElementById('sports').innerHTML='cricket';
+				} else if(document.getElementById('Hockey').checked==true) {
+					document.getElementById('sports').innerHTML='Hockey';
+				}
+			
+				if(pink.checked==true && green.checked==true)
+				{
+				res='pink,green';
+				}
+				else if(pink.checked==true && green.checked==false)
+				{
+					res='pink';
+				}
+				else if(pink.checked==false && green.checked==true){
+					res='green';
+				}
+				else 
+				{
+					res='none';
+				}
+				document.getElementById('result').innerHTML=res;
+			}
+		</script>
+	</body>
+</html>
