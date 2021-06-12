@@ -1,0 +1,29 @@
+<!-- Assignment3 : Create paragraphs in the div tag and demonstrate child css selector, highlight the paragraphs respectively. -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Child Selector</title> 
+		<style>
+			div > p {
+					background-color: yellow;
+					color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="color:green;text-align:center;">Child Selector</h1>
+		<p>This is one combinator</p>
+		<div> <!-- P1,P2,P4 - childs -->
+			<p>This is Paragraph1</p>
+			<p>This is Paragraph2</p>
+			<section>
+				<p>This is Paragraph3</p>
+			</section>
+			<p>This is Paragraph4</p>
+		</div>
+		<p>This is Paragraph5</p>
+		<p>This is Paragraph6</p>
+	</body>
+</html>
